@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/html.html to edit this template
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <script language="javascript">
+            function fun1()
+            {
+                var a=new Array(10,20,30,40,50);
+                var alen=a.length;
+                
+                var str="";
+                
+                for(var i=alen-1;i>=0;i--)
+                {
+                    str=str+a[i]+"&nbsp;&nbsp;";
+                }
+                
+                document.getElementById("sp1").innerHTML=str;
+            }
+            
+        </script>    
+        
+    </head>
+    <body>
+        <a href="javascript:void;" id="a1" onclick="fun1()">陣列元素逆迴圈輸出</a>
+        <p></p>
+        <span id="sp1"></span>
+    </body>
+</html>
